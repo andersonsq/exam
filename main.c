@@ -12,9 +12,9 @@ char elements[STACK_SIZE] ;
 int top;
 };
 
-int main ( )
+int main()
 {
-struct stack* st = newstack( );
+struct stack* st = new_stack();
 push(’H’, i );
 push(’e’, i);
 push(’l’, i);
@@ -23,4 +23,7 @@ push(’l’, i);
 push (’o’, i);
 print(st);
 reverseprint(st);
+
+printf("%c\n", top_stack);
 }
+
